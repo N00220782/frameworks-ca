@@ -27,8 +27,13 @@
 							<li class="nav-item">
 								<h4><a class="nav-link" href="menu.html">Menu</a></h4>
 							</li>
-							<li class="nav-item">
-								<h4><a class="nav-link" href="#" >Locations <i class="bi bi-caret-down"></i></a></h4>
+							<li class="nav-item dropdown">
+								<h4><a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"  aria-expanded="false">Locations</a>
+									<ul class="dropdown-menu bg-primary" aria-labelledby="navbarDropdownMenuLink">
+									  <li class="m-2 dropdown-item text-light">Inchicore</li>
+									  <li class="m-2 dropdown-item text-light">Rathmines</li>
+									</ul>
+								</h4>
 							</li>
 							<li class="nav-item">
 								<h4><a class="nav-link" href="#"><i class="bi bi-basket2-fill --bs-white"></i></a></h4>
@@ -54,10 +59,10 @@
 		<main id="#main">
 			<br><br><br>
 			<div class="container-fluid py-5">
-				<h1 class="text-center text-light mb-4">GINGERBREAD LATTE</h1>
+				<h1 class="text-center text-light mb-5">GINGERBREAD LATTE</h1>
 				<div class="container-lg">
-					<div class="row ">
-						<div class="col-sm-12 col-lg-6 border border-secondary border-3 rounded d-flex justify-content-center">
+					<div class="row">
+						<div class="col-sm-12 col-lg-6 d-flex justify-content-center">
 							<img src="images/gingerbread-latte-1.png" class="object-fit-cover" style="width: 600px">
 						</div>
 						<div class="col-sm-12 col-lg-6 bg-info border border-secondary border-3 rounded text-light p-5" >
@@ -73,7 +78,16 @@
 								  <li class="m-2 dropdown-item">Medium - €3.50</li>
 								  <li class="m-2 dropdown-item">Large - €4.00</li>
 								</ul>
-							  </div>
+							</div>
+							<br>
+							<div class="form-check">
+								<input class="form-check-input bg-white bg-active-primary" type="checkbox" value="" id="flexCheckDefault">
+								<label class="form-check-label" for="flexCheckDefault">
+									Add extra shot of espresso (+€0.40)
+								</label>
+							</div>
+							<br>
+							<a href="product.html"><button type="button" class="btn btn-secondary btn-lg">ADD TO CART</button></a>
 							
 						</div>
 					</div>
