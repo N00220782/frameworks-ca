@@ -13,11 +13,12 @@
  
     <body>
 		<header #="top">
-			<nav
-				class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary py-3"
-			>
-				<div class="container-xl">
+			<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary p-3">
+				<div class="container-fluid">
 					<a href="#" class="navbar-brand"><img src="images/footer-logo-gv.png"></a>
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+					  <span class="navbar-toggler-icon"></span>
+					</button>
 					<div class="collapse navbar-collapse" id="navbarScroll">
 						<ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll">
 							<li class="nav-item">
@@ -30,10 +31,7 @@
 								<h4><a class="nav-link" href="#" >Locations <i class="bi bi-caret-down"></i></a></h4>
 							</li>
 							<li class="nav-item">
-								<h4><a class="nav-link" href="#">About</a></h4>
-							</li>
-							<li class="nav-item">
-								<h4><a class="nav-link" href="#"><i class="bi bi-basket2-fill --bs-white"></i></a></h4>
+								<h4><a class="nav-link col-sm-4" href="#"><i class="bi bi-basket2-fill --bs-white"></i></a></h4>
 							</li>
 						</ul>
 						<form class="d-flex" role="search">
@@ -53,16 +51,16 @@
 		</header>
 		<main id="#main">
 			<br><br><br><br><br>
-		<div class="container-fluid py-5">
+		<div class="container-fluid mt-3">
 			<div class="container-lg">
 				<div class="card">
 					<img src="images/italian-hero-club-sandwich.webp" class="opacity-75 object-fit-cover border border-secondary border-3 rounded" style="height: 500px;">
-					<div class="card-img-overlay text-light d-flex align-items-center justify-content-center flex-column">
+					<div class="card-img-overlay text-light d-flex flex-column align-items-center justify-content-center">
 						<img src="images/footer-logo.png" style="height: 180px;">
 						<br>
 						<h2>BREKKIE • DELI • COFFEE</h2>
 						<br>
-						<button type="button" class="btn btn-secondary btn-lg">ORDER ONLINE</button>
+						<a href="menu.html"><button type="button" class="btn btn-secondary btn-lg">ORDER ONLINE</button></a>
 					</div>
 				</div>
 			</div>
@@ -72,11 +70,11 @@
 			<div class="container-lg">
 				<div class="card">
 					<img src="images/gingerbread_latte_thumbnail.jpg" class="opacity-75 object-fit-cover border border-secondary border-3 rounded" style="height: 500px;">
-					<div class="card-img-overlay text-light d-flex align-items-center justify-content-center flex-column">
-						<h1>TRY OUR NEW GINGERBREAD LATTE</h1>
+					<div class="card-img-overlay text-light d-flex flex-column align-items-center justify-content-center">
+						<h1 class="text-center">TRY OUR NEW GINGERBREAD LATTE</h1>
 						<br>
-						<h3>All our coffee is made with certified Fairtrade coffee beans. </h3>
-						<h3>Available for collection and delivery.</h3>
+						<h3 class="text-center">All our coffee is made with certified Fairtrade coffee beans. </h3>
+						<h3 class="text-center">Available for collection and delivery.</h3>
 						<br>
 						<a href="product.html"><button type="button" class="btn btn-secondary btn-lg">VIEW</button></a>
 					</div>
@@ -84,28 +82,27 @@
 			</div>
 		</div>
 
-		<div class="container-fluid py-5">
-			<div class="container-lg">
-				<div class="card bg-info border border-secondary border-3 rounded text-light d-flex align-items-center justify-content-center p-4">
-					<h1 class="mt-4">OUR LOCATIONS</h1>
+		<div class="container-fluid mb-4">
+			<div class="container-lg bg-info border border-secondary border-3 rounded text-light p-4">
+					<h1 class="mt-4 text-center">OUR LOCATIONS</h1>
 					<br>
-					<div class="row">
-						<div class="col align-items-center justify-content-center flex-column m-4">
+					<div class="row d-flex align-items-center justify-content-center">
+						<div class="col-sm-12 col-lg-4 d-flex flex-column align-self-center m-4">
 							<h2 class="text-center">Inchicore</h2>
 							<p class="text-center m-0">5A Tyrconnell Rd, Inchicore, Dublin 8</p>
-							<img src="images/Screenshot (5).png" class="m-4 object-fit-cover border border-secondary border-3 rounded" style="height: 410px;">
+							<img src="images/Screenshot (5).png" class="m-4 object-fit-cover border border-secondary border-3 rounded">
 							<h3 class="text-center">Opening Hours</h3>
 							<p class="text-center m-0">Mon-Fri: 6am-6pm</p> 
 							<p class="text-center m-0">Sat: 8am-6pm</p>
 							<p class="text-center m-0">Sun: 9am-5pm</p>
 						</div>
-						<div class="col justify-content-center align-items-center flex-column">
+						<div class="col-sm-12 col-lg-2 d-flex flex-column align-self-center">
 							<img src="images/footer-logo-gv.png" class="d-flex align-self-center">
 						</div>
-						<div class="col align-items-center justify-content-center flex-column m-4">
+						<div class="col-sm-12 col-lg-4 m-4  d-flex flex-column align-self-center">
 							<h2 class="text-center">Rathmines</h2>
 							<p class="text-center m-0">312 Rathmines Rd Lower, Rathmines, Dublin 6</p>
-							<img src="images/Screenshot (5) - Copy.png" class="m-4 object-fit-cover border border-secondary border-3 rounded" style="height: 410px;">
+							<img src="images/Screenshot (5) - Copy.png" class="m-4 object-fit-cover border border-secondary border-3 rounded">
 							<h3 class="text-center">Opening Hours</h3>
 							<p class="text-center m-0">Mon-Fri: 6am-6pm</p> 
 							<p class="text-center m-0">Sat: 8am-6pm</p>
@@ -117,70 +114,70 @@
 						<p class="text-center m-0">Email: hi@greenvilledeli.ie</p>
 						<p class="text-center mb-4">Phone: 089 986 0730</p>
 					</div>
-				</div>
 			</div>
 		</div>
+	</div>
 			
 			<div class="container-fluid bg-primary text-light py-5 mt-3">
 				<div class="container-lg">
-					<div class="row">
-						<div class="col-md-3">
-							<h3>More About Us...</h3>
+					<div class="row gx-5">
+						<div class="col">
+							<h5>More About Us...</h5>
 							<ul class="list-group list-group-flush">
 								<a href="menu.html">
 								<li
-									class="list-group-item bg-primary text-light fs-5 border-0 px-0 py-1"
+									class="list-group-item bg-primary text-light fs-6 border-0 px-0 py-1"
 								>
 									Menu
 								</li></a>
 								<li
-									class="list-group-item bg-primary text-light fs-5 border-0 px-0 py-1"
+									class="list-group-item bg-primary text-light fs-6 border-0 px-0 py-1"
 								>
 									Allergens
 								</li>
 								<li
-									class="list-group-item bg-primary text-light fs-5 border-0 px-0 py-1"
+									class="list-group-item bg-primary text-light fs-6 border-0 px-0 py-1"
 								>
 									Locations
 								</li>
 								<li
-									class="list-group-item bg-primary text-light fs-5 border-0 px-0 py-1"
+									class="list-group-item bg-primary text-light fs-6 border-0 px-0 py-1"
 								>
 									FAQ + T&CS
 
 								</li>
 							</ul>
 						</div>
-						<div class="col-md-2">
-							<h3>Let's Talk!</h3>
+						<div class="col">
+							<h5>Let's Talk!</h5>
 							<ul class="list-group list-group-flush">
 								<li
-									class="list-group-item bg-primary text-light fs-5 border-0 px-0 py-1"
+									class="list-group-item bg-primary text-light fs-6 border-0 px-0 py-1"
 								>
 									Contact
 								</li>
 								<li
-									class="list-group-item bg-primary text-light fs-5 border-0 px-0 py-1"
+									class="list-group-item bg-primary text-light fs-6 border-0 px-0 py-1"
 								>
 									Legal
 								</li>
 								<li
-									class="list-group-item bg-primary text-light fs-5 border-0 px-0 py-1"
+									class="list-group-item bg-primary text-light fs-6 border-0 px-0 py-1"
 								>
 									About
 								</li>
 							</ul>
 						</div>
-						<div class="col-md-3">
-							<h3>Want More?</h3>
+						<div class="col">
+							<h5>Want More?</h5>
 							<ul class="list-group list-group-flush">
 								<li
-									class="list-group-item bg-primary text-light fs-5 border-0 px-0 py-1"
+									class="list-group-item bg-primary text-light fs-6 border-0 px-0 py-1"
 								>
 									Instagram
 								</li>
 								<li
-									class="list-group-item bg-primary text-light fs-5 border-0 px-0 py-1"
+									class="list-group-item bg-primary text-light fs-6 border-0 px-0 py-1"
 								>
 									Facebook
 								</li>

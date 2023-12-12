@@ -13,11 +13,12 @@
  
     <body>
 		<header #="top">
-			<nav
-				class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary py-3"
-			>
-				<div class="container-xl">
+			<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary p-3">
+				<div class="container-fluid">
 					<a href="#" class="navbar-brand"><img src="images/footer-logo-gv.png"></a>
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+					  <span class="navbar-toggler-icon"></span>
+					</button>
 					<div class="collapse navbar-collapse" id="navbarScroll">
 						<ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll">
 							<li class="nav-item">
@@ -28,9 +29,6 @@
 							</li>
 							<li class="nav-item">
 								<h4><a class="nav-link" href="#" >Locations <i class="bi bi-caret-down"></i></a></h4>
-							</li>
-							<li class="nav-item">
-								<h4><a class="nav-link" href="#">About</a></h4>
 							</li>
 							<li class="nav-item">
 								<h4><a class="nav-link" href="#"><i class="bi bi-basket2-fill --bs-white"></i></a></h4>
@@ -56,81 +54,92 @@
 		<main id="#main">
 			<br><br><br>
 			<div class="container-fluid py-5">
+				<h1 class="text-center text-light mb-4">GINGERBREAD LATTE</h1>
 				<div class="container-lg">
-					<!--<div class="card d-flex align-items-center border-0">-->
-						<div class="row ">
-							<div class="col border border-secondary border-3 rounded">
-								<!-- <img src="images/gingerbread-latte-1.png" class="object-fit-cover border border-secondary border-3 rounded" > -->
-							<p>test</p>
-							</div>
-							<div class="col bg-info border border-secondary border-3 rounded text-light" >
-								<p>steffo</p>
-							</div>
+					<div class="row ">
+						<div class="col-sm-12 col-lg-6 border border-secondary border-3 rounded d-flex justify-content-center">
+							<img src="images/gingerbread-latte-1.png" class="object-fit-cover" style="width: 600px">
 						</div>
-					<!--</div>-->
+						<div class="col-sm-12 col-lg-6 bg-info border border-secondary border-3 rounded text-light p-5" >
+							<h4 class="text-justify">FROM €3.50</h4>
+							<p>Take a double shot of Arabica bean espresso and mix it with 100% fresh Irish milk, steam it to perfection and top it with whipped cream and a pumpkin spice blend, for the perfect holiday touch.
+							</p>
+							<br>
+							<p>Size:</p>
+							<div class="dropdown">
+								<button class="btn border-white text-light dropdown-toggle" type="button" data-bs-toggle="dropdown">Medium - €3.50
+								<span class="caret"></span></button>
+								<ul class="dropdown-menu bg-white">
+								  <li class="m-2 dropdown-item">Medium - €3.50</li>
+								  <li class="m-2 dropdown-item">Large - €4.00</li>
+								</ul>
+							  </div>
+							
+						</div>
+					</div>
 				</div>
 			</div>
 			
-			<div class="container-fluid bg-primary text-light py-5">
+			<div class="container-fluid bg-primary text-light py-5 mt-3">
 				<div class="container-lg">
-					<div class="row">
-						<div class="col-md-3">
-							<h3>More About Us...</h3>
+					<div class="row gx-5">
+						<div class="col">
+							<h5>More About Us...</h5>
 							<ul class="list-group list-group-flush">
 								<a href="menu.html">
                                     <li
-                                        class="list-group-item bg-primary text-light fs-5 border-0 px-0 py-1"
+                                        class="list-group-item bg-primary text-light fs-6 border-0 px-0 py-1"
                                     >
                                         Menu
                                     </li></a>
 								<li
-									class="list-group-item bg-primary text-light fs-5 border-0 px-0 py-1"
+									class="list-group-item bg-primary text-light fs-6 border-0 px-0 py-1"
 								>
 									Allergens
 								</li>
 								<li
-									class="list-group-item bg-primary text-light fs-5 border-0 px-0 py-1"
+									class="list-group-item bg-primary text-light fs-6 border-0 px-0 py-1"
 								>
 									Locations
 								</li>
 								<li
-									class="list-group-item bg-primary text-light fs-5 border-0 px-0 py-1"
+									class="list-group-item bg-primary text-light fs-6 border-0 px-0 py-1"
 								>
 									FAQ + T&CS
 
 								</li>
 							</ul>
 						</div>
-						<div class="col-md-2">
-							<h3>Let's Talk!</h3>
+						<div class="col">
+							<h5>Let's Talk!</h5>
 							<ul class="list-group list-group-flush">
 								<li
-									class="list-group-item bg-primary text-light fs-5 border-0 px-0 py-1"
+									class="list-group-item bg-primary text-light fs-6 border-0 px-0 py-1"
 								>
 									Contact
 								</li>
 								<li
-									class="list-group-item bg-primary text-light fs-5 border-0 px-0 py-1"
+									class="list-group-item bg-primary text-light fs-6 border-0 px-0 py-1"
 								>
 									Legal
 								</li>
 								<li
-									class="list-group-item bg-primary text-light fs-5 border-0 px-0 py-1"
+									class="list-group-item bg-primary text-light fs-6 border-0 px-0 py-1"
 								>
 									About
 								</li>
 							</ul>
 						</div>
-						<div class="col-md-3">
-							<h3>Want More?</h3>
+						<div class="col">
+							<h5>Want More?</h5>
 							<ul class="list-group list-group-flush">
 								<li
-									class="list-group-item bg-primary text-light fs-5 border-0 px-0 py-1"
+									class="list-group-item bg-primary text-light fs-6 border-0 px-0 py-1"
 								>
 									Instagram
 								</li>
 								<li
-									class="list-group-item bg-primary text-light fs-5 border-0 px-0 py-1"
+									class="list-group-item bg-primary text-light fs-6 border-0 px-0 py-1"
 								>
 									Facebook
 								</li>
@@ -138,7 +147,7 @@
 						</div>
 					</div>
 					<br>
-					<p class="text-uppercase fs-6 pb-5">
+					<p class="text-uppercase fs-6 pb-6">
 						<small>© Greenville Deli 2023</small>
 					</p>
 				</div>
